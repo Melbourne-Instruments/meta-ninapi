@@ -1,0 +1,13 @@
+diff --git a/nina_gui.pro b/nina_gui.pro
+index 620be8f..b70c6cd 100644
+--- a/nina_gui.pro
++++ b/nina_gui.pro
+@@ -15,7 +15,7 @@ QT += gui widgets
+ #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
+ 
+ # Get the current Git commit hash
+-DEFINES += NINA_GUI_GIT_COMMIT_HASH="\\\"$(shell git log -1 --format=%H)\\\""
++DEFINES += NINA_GUI_GIT_COMMIT_HASH="\\\"$$system(cd ../git; git log -1 --format=%H)\\\""
+ 
+ # Paths
+ INCLUDEPATH += include

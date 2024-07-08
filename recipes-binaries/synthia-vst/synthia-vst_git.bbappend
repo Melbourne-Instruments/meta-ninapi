@@ -1,0 +1,13 @@
+SRCREV = "243b3da2a9c3d4f1d1a842df38653ec7048599b5"
+PV = "1.4.0+${SRCREV}"
+FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+
+EXTRA_OECMAKE = "\
+    -DCMAKE_BUILD_TYPE=Debug \
+    -DSMTG_ADD_VST3_PLUGINS_SAMPLES=TRUE \
+    -DCMAKE_SKIP_RPATH=TRUE \
+"
+
+do_install_append() {
+}
+

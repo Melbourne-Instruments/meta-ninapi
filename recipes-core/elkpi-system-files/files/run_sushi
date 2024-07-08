@@ -1,0 +1,1 @@
+sushi -r -m 2 -c /home/root/nina/config_nina.json &

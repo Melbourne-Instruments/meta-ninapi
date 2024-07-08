@@ -1,0 +1,8 @@
+SRCREV = "a1723262da11e3b43965e99e6cde6e9957f88de0"
+PV = "1.5.0+${SRCREV}"
+
+EXTRA_OECMAKE = "\
+    -DCMAKE_BUILD_TYPE=Release \
+    -DXENOMAI_BASE_DIR=${WORKDIR}/recipe-sysroot/usr/xenomai \
+    -DCMAKE_SKIP_RPATH=TRUE \
+"

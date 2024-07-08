@@ -1,0 +1,17 @@
+
+######################################################################
+
+Melbourne Instruments NINA OS Image for NINA Pi board on RaspberryPi 4
+
+######################################################################
+
+Nina Pi board specific targets:
+    ninapi-audio-os-image - builds a NINA OS Pi development image
+
+
+To build an image, run:
+    bitbake ninapi-audio-os-image
+    bitbake ninapi-audio-os-swu
+
+To build the cross-compiling Yocto SDK, run:
+    bitbake -c populate_sdk ninapi-audio-os-image

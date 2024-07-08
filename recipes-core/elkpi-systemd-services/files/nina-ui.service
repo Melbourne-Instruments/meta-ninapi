@@ -1,0 +1,15 @@
+[Unit]
+Description=Nina app starting service
+Requires=sushi.service
+After=sushi.service
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+WorkingDirectory=/udata
+Environment=LD_LIBRARY_PATH=/usr/xenomai/lib
+User=root
+ExecStart=/usr/bin/nina_ui
+
+[Install]
+WantedBy=multi-user.target
